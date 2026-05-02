@@ -1,0 +1,563 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tiny Book Notation Guide</title>
+    <style>
+      body,
+      svg * {
+        font-family: sans-serif;
+        font-size: 16px;
+      }
+
+      body {
+        margin: 2rem 3rem;
+      }
+
+      @media print {
+        body {
+          margin: 0;
+        }
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      :not(li) > a {
+        color: inherit;
+        opacity: 0.6;
+      }
+
+      :not(li) > a::after {
+        content: " ·";
+      }
+
+      .diagram {
+        break-inside: avoid-page;
+      }
+
+      .diagram > * {
+        border: 1px solid black;
+        padding: 1.1rem 1.6rem;
+      }
+
+      .diagram::before {
+        content: "Diagram";
+        display: block;
+        font-size: 0.75rem;
+        font-style: italic;
+      }
+
+      .diagram.example::before {
+        content: "Example";
+      }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        margin: 1em 0;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        vertical-align: top;
+      }
+
+      td > img {
+        vertical-align: inherit;
+      }
+
+      .meta-note {
+        color: red;
+      }
+
+      #combo-example {
+        columns: 1;
+      }
+
+      @media only screen and (min-width: 900px) {
+        #combo-example {
+          columns: 2;
+        }
+      }
+
+      @media only screen and (min-width: 1200px) {
+        #combo-example {
+          columns: 3;
+        }
+      }
+
+      .combo-example-text {
+        vertical-align: center;
+      }
+
+      .combo-example-svg:not(.show-circle) .symbol-circle,
+      .combo-example-svg:not(.show-slash) .symbol-slash,
+      .combo-example-svg:not(.show-cross) .symbol-cross,
+      .combo-example-svg:not(.show-bang) .symbol-bang,
+      .combo-example-svg:not(.show-query) .symbol-query,
+      .combo-example-svg:not(.show-query-bang) .symbol-query-bang,
+      .combo-example-svg:not(.show-flag) .symbol-flag,
+      .combo-example-svg:not(.show-v) .symbol-v {
+        display: none;
+      }
+    </style>
+    <script src="combo-example.js" defer></script>
+  </head>
+  <body>
+    <h1>Tiny Book Notation Guide, Rev. 3</h1>
+    <p>
+      This guide describes a notation designed for tracking tasks and notes
+      within a pocket-sized book without lines markers. This notation is
+      designed to minimize both space usage and pen strokes while remaining
+      legible at a glance.
+    </p>
+    <h2 id="0"><a href="#0">0</a> Table of Contents</h2>
+
+    <ul>
+      <li><a href="#1">1 &middot; Concepts</a></li>
+      <ul>
+        <li><a href="#1.1">1.1 &middot; The Bar</a></li>
+        <li><a href="#1.2">1.2 &middot; Modifiers</a></li>
+      </ul>
+      <li><a href="#2">2 &middot; Modifier Symbols</a></li>
+      <ul>
+        <li><a href="#2.1">2.1 &middot; State</a></li>
+        <li><a href="#2.2">2.2 &middot; Class</a></li>
+      </ul>
+      <li><a href="#3">3 &middot; Dating</a></li>
+      <ul>
+        <li><a href="#3.1">3.1 &middot; Minimum Updates</a></li>
+      </ul>
+    </ul>
+
+    <h2 id="1"><a href="#1">1</a> Concepts</h2>
+    <p>
+      The format is comprised of an unordered but dated list of items. Items can
+      be a task to complete, a shopping list, miscellaneous notes, or any other
+      alphanumeric string.
+    </p>
+    <h3 id="1.1"><a href="#1.1">1.1</a> The Bar</h3>
+    <p>
+      To add an item to the list, write a line or block of text in the next
+      available space, typically directly below the last item. This text should
+      be written with a blank margin on the left side to allow room for
+      <i>the bar</i>.
+    </p>
+    <p>
+      After the text of an item is complete, delimit it by drawing a vertical
+      line on the left side. This line is <i>the bar</i> and it should be drawn
+      such that it envelops the full height of the text.
+    </p>
+    <div class="diagram example">
+      <img src="svg/example-bar.svg" />
+    </div>
+    <p>
+      In addition to conveying the bounds of an item, <i>the bar</i> also
+      conveys information about the <i>state</i> and <i>class</i> of the item.
+      With no markings other than the obligatory bar, an item is considered to
+      be a task in need of completion.
+    </p>
+    <h3 id="1.2"><a href="#1.2">1.2</a> Modifiers</h3>
+    <p>
+      Modifiers are symbols added to the bar to convey additional information
+      about an item. An item can only have one state, but can have multiple
+      classes. Each symbol, whether a state symbol or class symbol, has one
+      specific position on the bar. Some positions can hold multiple symbols,
+      whereas others are exclusive to make invalid or conflicting information
+      impossible to represent.
+    </p>
+    <div class="diagram">
+      <img src="svg/diagram-symbol-positions.svg" />
+    </div>
+    <h2 id="2"><a href="#2">2</a> Modifier Symbols</h2>
+    <h3 id="2.1"><a href="#2.1">2.1</a> State</h3>
+    State symbols are used to convey the state of an item. Only one can be
+    present per item, placed in the center of the bar. The following states are
+    possible:
+    <table>
+      <tr>
+        <th>State</th>
+        <th>Symbol</th>
+        <th>Symbol name</th>
+        <th>Info</th>
+      </tr>
+      <tr>
+        <td>To-do</td>
+        <td>None</td>
+        <td>N/A</td>
+        <td>Default state, indicates a task to complete.</td>
+      </tr>
+      <tr>
+        <td>Canceled</td>
+        <td><img src="svg/symbol-slash.svg" /></td>
+        <td>Slash</td>
+        <td>Indicates a canceled task.</td>
+      </tr>
+      <tr>
+        <td>Done</td>
+        <td><img src="svg/symbol-cross.svg" /></td>
+        <td>Cross</td>
+        <td>Indicates a completed task.</td>
+      </tr>
+      <tr>
+        <td>No action</td>
+        <td><img src="svg/symbol-circle.svg" /></td>
+        <td>Circle</td>
+        <td>Indicates an item requires no action. Used for notes.</td>
+      </tr>
+    </table>
+    <p>
+      In the following example, there are three items. Two tasks, and one note.
+      The first task is uncompleted, and the second is completed.
+    </p>
+    <p>
+      <i
+        >Note: Use shorthand whenever possible. In this example, "Temp." refers
+        to temperature.</i
+      >
+    </p>
+    <div class="diagram example">
+      <img src="svg/example-state.svg" />
+    </div>
+    <h3 id="2.2"><a href="#2.2">2.2</a> Class</h3>
+    Class symbols are used to convey the class (i.e. type) of an item. Unlike
+    states, items can have multiple classes. Each symbol has a designated
+    position (side) it should be drawn on, and symbols that share the same
+    position can be combined.
+    <table>
+      <tr>
+        <th>Class</th>
+        <th>Symbol</th>
+        <th>Symbol name</th>
+        <th>Position</th>
+        <th>Info</th>
+      </tr>
+      <tr>
+        <td>Critical</td>
+        <td><img src="svg/symbol-bang.svg" /></td>
+        <td>Bang</td>
+        <td>Left</td>
+        <td>
+          Indicates a task is of critical importance or its completion is
+          urgent.
+        </td>
+      </tr>
+      <tr>
+        <td>Unclear</td>
+        <td><img src="svg/symbol-query.svg" /></td>
+        <td>Query</td>
+        <td>Left</td>
+        <td>
+          Indicates the task requires clarification or additional information.
+        </td>
+      </tr>
+      <tr>
+        <td>Critical+Unclear</td>
+        <td><img src="svg/symbol-query-bang.svg" /></td>
+        <td>N/A</td>
+        <td>Left</td>
+        <td>Combination of <i>Critical</i> and <i>Unclear</i>.</td>
+      </tr>
+      <tr>
+        <td>List</td>
+        <td><img src="svg/symbol-flag.svg" /></td>
+        <td>Flag</td>
+        <td>Right</td>
+        <td>
+          Indicates a list which may be expanded. The following item should be
+          placed on the next page (leaving the rest of the current page blank)
+          so that the list can be expanded as needed.
+        </td>
+      </tr>
+      <tr>
+        <td>Void</td>
+        <td><img src="svg/symbol-v.svg" /></td>
+        <td>V ("Vee")</td>
+        <td>Right</td>
+        <td>
+          Indicates that the item is void, e.g. no longer relevant, contains
+          incorrect information, etc. Does <b>not</b> imply a task is canceled
+          or completed, so the relevant state symbols should be drawn too.
+        </td>
+      </tr>
+      <tr>
+        <td>List+Void</td>
+        <td><img src="svg/symbol-flag-v.svg" /></td>
+        <td>N/A</td>
+        <td>Right</td>
+        <td>Combination of <i>List</i> and <i>Void</i>.</td>
+      </tr>
+    </table>
+    <p>
+      The following example shows every possible combination of state and class
+      modifiers.
+    </p>
+    <div class="diagram example"><div id="combo-example"></div></div>
+    <p>
+      <i
+        >Note: Symbols drawn in the Right Class position should be drawn
+        connected to the top of the bar. This helps to visually differentiate
+        them from the text section of the item.</i
+      >
+    </p>
+    <h2 id="3"><a href="#3">3</a> Dating</h2>
+    <p>
+      In order to make good use of relative dates and shorthand such as "tmrw."
+      (tomorrow), "n. mon." (next monday), etc, it's necessary to keep track of
+      the date each item was added. This is accomplished by writing the current
+      date (in shorthand) on the right side of the current page in the next
+      available position. This is called a <i>date line</i>. A horizontal line
+      can optionally be drawn to the right of the date to improve legibility.
+    </p>
+    <p>
+      The month should always be shortened to three letters, but the year should
+      always be written in full. With this scheme, it can be inferred that all
+      three character strings in the <i>date line</i> are months, all one and
+      two character strings are days, and all four character strings are years.
+    </p>
+    <div class="diagram example">
+      <img src="svg/example-date.svg" />
+    </div>
+    <h3 id="3.1"><a href="#3.1">3.1</a> Minimum Updates</h3>
+    <p>
+      A new date line should be added only when you intend to add another item
+      directly after it, in order to prevent writing redundant date lines with
+      no following items. In addition, a new date line should only include
+      components of the date that have changed since the previous date line. If
+      the month has not changed, only day should be written. If the month has
+      changed but the year hasn't, only the month and the day should be written.
+      The only instances in which the year should be written are 1) on the first
+      date line of the book, and 2) after the new year.
+    </p>
+    <div class="diagram example">
+      <img src="svg/example-date-multiple.svg" />
+    </div>
+    <p>
+      <i
+        >Note: The presence of ellipses (...) in this example implies at least
+        one item in between date lines.</i
+      >
+    </p>
+
+    <!-- Probably just collapse this node in your editor -->
+    <div id="combo-example-template" style="display: none">
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="combo-example-svg"
+          width="35.34"
+          height="69.27"
+          version="1.1"
+          viewBox="0 0 9.35 18.328"
+        >
+          <g
+            style="display: inline; opacity: 1"
+            transform="translate(-8.002 4.022)"
+          >
+            <text
+              xml:space="preserve"
+              x="25.422"
+              y="3.325"
+              style="
+                font-style: normal;
+                font-weight: 400;
+                font-size: 21.1665px;
+                line-height: 1.25;
+                font-family: sans-serif;
+                fill: #000;
+                fill-opacity: 1;
+                stroke: none;
+                stroke-width: 0.529166;
+              "
+            />
+            <path
+              class="symbol-query-bang"
+              d="M9.459-3.625v3.51"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-width: 0.793748;
+                stroke-linecap: round;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 4;
+                stroke-dasharray: none;
+                stroke-opacity: 1;
+              "
+            />
+            <g class="symbol-flag" transform="matrix(2 0 0 2 -12.678 -5.141)">
+              <path
+                d="M12.7 1.058h2.117"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-width: 0.396875;
+                  stroke-linecap: round;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+              />
+              <path
+                d="M12.7 3.175h2.117"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-width: 0.396875;
+                  stroke-linecap: round;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+              />
+            </g>
+            <g class="symbol-bang" transform="matrix(2 0 0 2 -12.678 -5.141)">
+              <path
+                d="M11.642 1.058v1.456"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-width: 0.396875;
+                  stroke-linecap: round;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+              />
+              <circle
+                cx="11.642"
+                cy="3.175"
+                r=".198"
+                style="
+                  fill: #000;
+                  stroke: none;
+                  stroke-width: 0.529166;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                "
+              />
+            </g>
+            <path
+              class="symbol-v"
+              d="M12.722-3.025 14.84 1.21l2.117-4.234"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-width: 0.793748;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 4;
+                stroke-dasharray: none;
+                stroke-opacity: 1;
+              "
+            />
+            <g class="symbol-query" transform="matrix(2 0 0 2 -12.678 -5.141)">
+              <circle
+                cx="11.06"
+                cy="3.175"
+                r=".198"
+                style="
+                  fill: #000;
+                  stroke: none;
+                  stroke-width: 0.529166;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                "
+              />
+              <path
+                d="M10.538 1.316c.084-.336.974-.622 1.097.021.077.406-.378.599-.561.694a9 9 0 0 1-.006.483"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-width: 0.396875;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+              />
+            </g>
+            <path
+              class="symbol-cross"
+              d="m10.606 3.325 4.233 4.233"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-width: 0.793748;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 4;
+                stroke-dasharray: none;
+                stroke-opacity: 1;
+              "
+            />
+            <path
+              class="symbol-slash"
+              d="m14.84 3.325-4.234 4.233"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-width: 0.793748;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 4;
+                stroke-dasharray: none;
+                stroke-opacity: 1;
+              "
+            />
+            <circle
+              class="symbol-circle"
+              cx="12.722"
+              cy="5.442"
+              r="2.514"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-width: 0.793748;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 4;
+                stroke-dasharray: none;
+              "
+            />
+            <path
+              d="M12.722-3.025v16.933"
+              style="
+                display: inline;
+                fill: none;
+                fill-rule: evenodd;
+                stroke: #000;
+                stroke-width: 0.793748;
+                stroke-linecap: round;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 4;
+                stroke-dasharray: none;
+                stroke-opacity: 1;
+              "
+            />
+          </g>
+        </svg>
+        <span class="combo-example-text"></span>
+      </div>
+    </div>
+  </body>
+</html>

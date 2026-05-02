@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="98.356834"
+   height="109.94399"
+   viewBox="0 0 26.023582 29.089348"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="example-date-multiple.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     units="px"
+     width="120px"
+     inkscape:zoom="6.3698338"
+     inkscape:cx="22.606555"
+     inkscape:cy="44.506656"
+     inkscape:window-width="2560"
+     inkscape:window-height="1334"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9405"
+       empspacing="4"
+       spacingx="1.0583334"
+       spacingy="1.0583334"
+       originx="-13.119117"
+       originy="-2.0153809e-08" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-13.119116,-2.1907522)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="19.050001"
+       y="4.2333336"
+       id="text10888"><tspan
+         sodipodi:role="line"
+         id="tspan10886"
+         style="stroke-width:0.264583"
+         x="19.050001"
+         y="4.2333336" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="30.569563"
+       y="9.5250006"
+       id="text2881"><tspan
+         sodipodi:role="line"
+         id="tspan2879"
+         style="stroke-width:0.264583"
+         x="30.569563"
+         y="9.5250006">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="15.554632"
+       y="5.2599163"
+       id="text4917"><tspan
+         sodipodi:role="line"
+         id="tspan4915"
+         style="font-size:4.23333px;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="15.554632"
+         y="5.2599163">Apr 29 2026</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="30.569563"
+       y="20.108334"
+       id="text2881-3"><tspan
+         sodipodi:role="line"
+         id="tspan2879-6"
+         style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="30.569563"
+         y="20.108334">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="19.049995"
+       y="15.84325"
+       id="text4917-5"><tspan
+         sodipodi:role="line"
+         id="tspan4915-3"
+         style="font-size:4.23333px;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="19.049995"
+         y="15.84325">30</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 25.655725,14.287501 H 38.878111"
+       id="path1776-5" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="30.569563"
+       y="31.220833"
+       id="text2881-3-2"><tspan
+         sodipodi:role="line"
+         id="tspan2879-6-6"
+         style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="30.569563"
+         y="31.220833">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="12.708483"
+       y="26.95575"
+       id="text4917-5-8"><tspan
+         sodipodi:role="line"
+         id="tspan4915-3-7"
+         style="font-size:4.23333px;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="12.708483"
+         y="26.95575">May 1</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="12.708483"
+         y="32.247414"
+         id="tspan15763" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 25.655725,25.400001 H 38.878111"
+       id="path1776-5-9" />
+  </g>
+</svg>

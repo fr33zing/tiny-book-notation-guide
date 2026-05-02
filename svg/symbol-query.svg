@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="14.875775"
+   height="31.999243"
+   viewBox="0 0 3.9358827 8.466466"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="symbol-query.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     units="px"
+     width="120px"
+     inkscape:zoom="18.016611"
+     inkscape:cx="-1.4431127"
+     inkscape:cy="22.28499"
+     inkscape:window-width="2560"
+     inkscape:window-height="1334"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-global="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9405"
+       empspacing="4"
+       spacingx="1.0583334"
+       spacingy="1.0583334"
+       originx="-2.5291544"
+       originy="-0.00020072926" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-2.5291549,-2.0068966e-4)">
+    <circle
+       style="fill:#000000;stroke:none;stroke-width:0.529167;stroke-linecap:round"
+       id="path11605"
+       cx="4.2333345"
+       cy="7.9375005"
+       r="0.5291667" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.05833;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 3.0583199,0.90914764 C 4.8390692,-0.03219036 5.8665476,0.94754952 5.9304957,1.8405141 6.0395501,3.3633384 4.5697845,3.9580614 4.221064,5.1614767 L 4.195947,5.9852803"
+       id="path17177"
+       sodipodi:nodetypes="cscc" />
+  </g>
+</svg>
